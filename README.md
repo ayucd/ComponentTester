@@ -36,13 +36,13 @@ with each leg in separate nodes.
 
 2. **Detection of NPN & PNP Transistors:** If two diodes are found and they have common anode pin but different cathode pin then it 
 is a NPN transistor; and if they have common cathode pin and different anode pin then it is a PNP transistor.
-  1. **Measurement of NPN Transistor characteristics:** The base pin (which is now identified) is connected to VCC through 680kΩ resistor one the other pins are connected to VCC through 680kΩ resistor and the GND. The voltages are checked at *assumed* collector, base and emitter and DC gain is calculated. If it is less than 1 then collector and emitter are interchanged and the **DC gain** is calculated again. The **base-emitter forward voltage** is also measured.
-  2. **Measurement of PNP Transistor:** Here, the base is connected to GND through the 680kΩ resistor and *assumed* emitter is connected to VCC through 680kΩ resistor the collector is connected to GND. The process of finding the device characteristics is similar to that of the NPN transistor.
+  * **Measurement of NPN Transistor characteristics:** The base pin (which is now identified) is connected to VCC through 680kΩ resistor one the other pins are connected to VCC through 680kΩ resistor and the GND. The voltages are checked at *assumed* collector, base and emitter and DC gain is calculated. If it is less than 1 then collector and emitter are interchanged and the **DC gain** is calculated again. The **base-emitter forward voltage** is also measured.
+  * **Measurement of PNP Transistor:** Here, the base is connected to GND through the 680kΩ resistor and *assumed* emitter is connected to VCC through 680kΩ resistor the collector is connected to GND. The process of finding the device characteristics is similar to that of the NPN transistor.
 
 3. **Detection of MOSFETs:** If a single diode is detected by the tester then it may be the body diode of a MOSFET hence a test is 
 performed for it.
-  1. **NMOS:** The other pins without the connection of the diode are set to high voltage through a 680kΩ resistor and voltage drop is measured. If the pins conduct then it is an NMOS. The **gate capacitance** and **threshold voltage** are measured by switching the gate pin from high to low and comparing the discharge with capacitor discharge equation and finding out the voltage at which drain-source conduction stops.
-  2. **PMOS:** Similar test as NMOS.
+  * **NMOS:** The other pins without the connection of the diode are set to high voltage through a 680kΩ resistor and voltage drop is measured. If the pins conduct then it is an NMOS. The **gate capacitance** and **threshold voltage** are measured by switching the gate pin from high to low and comparing the discharge with capacitor discharge equation and finding out the voltage at which drain-source conduction stops.
+  * **PMOS:** Similar test as NMOS.
 
 4. **Detection of Capacitors:** Whether a capacitor is connected between two pins can be found by charging the pins for 10ms and observing voltage across pins after switching the pins to ground through a resistor, *if the voltage falls slowly* then a capacitor is connected. A 5V 100Hz PWM are applied to the pins through the 680kΩ resistor and voltage is measured in between pulses till the voltage reaches 0.3V at which charging time is calculated and the capacitance is found. The capacitor is then discharged by connecting to ground.
 
