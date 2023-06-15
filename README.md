@@ -1,5 +1,5 @@
 # Component Tester using Arduino Nano
-Repository for the Arduino-based project for the course EE381A taken at IITK.
+Repository for the Arduino-based project for the course EE381A taken at IITK under Dr. Baquer Mazhari.
 
 ## Project Objectives
 The aim is to make a compact and affordable device based on Arduino Nano that can detect whether the device in question is a resistor, capacitor, inductor, BJT or MOSFET while also predicting the characteristics of the devices with reasonable accuracy and displaying it all on an OLED display.
@@ -12,7 +12,7 @@ The goal is to create a simple and cheap tester that can be built even by beginn
 ## Project Timeline
 1. [Mapping characteristics of the Arduino and other equipments and deciding upon a circuit that works.](#circuit-schematic)
 2. [Implementation.](#implementation)
-3. [Finding the accuracy and range of the tester.](#results)
+3. [Finding the accuracy of the tester.](#results)
 
 ## Components Used
 1. Arduino Nano (atmega328p)
@@ -53,5 +53,8 @@ performed for it.
 7. The characteristics of the device detected are displayed to the OLED and the **Adafruit GFX library** which provides support for 
 the SSD1306 display is used.
 
+## Results
+
+The tester predicted the correct device and the correct characteristics ~97% of the times. It mostly faltered while measuring the forward voltage of the diode, due to unknown reasons. However, the error is <35% and the device maybe improvised further. The tester was **deemed successfully made**, performing most of its tasks accurately.
 
 
