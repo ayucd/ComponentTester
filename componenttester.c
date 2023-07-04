@@ -1,20 +1,3 @@
-  /*                      \\\|///
-                        \\  - -  //
-                         (  @ @  )
-  /--------------------oOOo-(_)-oOOo---------------------\
-  |                                                      |
-  |                                                      |
-  |    Transistor Tester for Arduino (version 1.08a)     |
-  |                                                      |
-  |  based on code: Karl-Heinz Kubbeler (version 1.08k)  |
-  |                                                      |
-  |                                                      |
-  |                            Oooo                      |
-  \--------------------oooO----(   )---------------------/
-    	               (   )    ) /
-                        \ (    (_/
-                         \_)                            */
-
 
 #include <avr/io.h>
 #include <util/delay.h>
